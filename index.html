@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashit Kumar Das | Computer Science & AI/ML Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: rgba(15, 23, 42, 0.9);
+      border-bottom: 1px solid #334155;
+      padding: 1rem 5%;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      font-size: 2.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0f172a;
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+    .btn-outline {
+      border: 1px solid #475569;
+      color: var(--text);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    section {
+      margin-top: 3.5rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .skill-tag {
+      background: var(--card);
+      border: 1px solid #334155;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin-top: 4rem;
+      border-top: 1px solid #334155;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Ashit.dev</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <span class="badge">Open to Internships & Entry-Level Tech Roles</span>
+      <h1>Hi, I'm Ashit Kumar Das</h1>
+      <p>
+        Computer Science Undergraduate &amp; CTTC-trained AI/ML Enthusiast from Bhubaneswar, Odisha.
+        Building practical solutions with Python, Data Analytics, and Machine Learning.
+      </p>
+      <div class="btn-group">
+        <a href="https://github.com/ashitkumard031-cyber" target="_blank" class="btn btn-primary">View GitHub</a>
+        <a href="https://www.linkedin.com/in/ashit-kumar-das-6690b4265" target="_blank" class="btn btn-outline">Connect on LinkedIn</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am currently pursuing a B.Tech in Computer Science &amp; Engineering at the College of Engineering Bhubaneswar,
+          building upon a Diploma in Electronics &amp; Telecommunication Engineering (75%). I have also completed hands-on
+          training in Artificial Intelligence, Machine Learning, and Python programming at the Central Tool Room &amp; Training Centre (CTTC).
+          I enjoy problem-solving, writing clean Python logic, and analyzing data using visualization libraries.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Artificial Intelligence &amp; ML</span>
+        <span class="skill-tag">Data Analytics</span>
+        <span class="skill-tag">Matplotlib &amp; Seaborn</span>
+        <span class="skill-tag">C &amp; C++</span>
+        <span class="skill-tag">SQL &amp; Database Basics</span>
+        <span class="skill-tag">Git &amp; GitHub</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Python Practice Programs</h3>
+          <p>
+            A structured collection of Python CLI programs including an interactive Calculator, To-Do List Manager,
+            and Student Grade Evaluator focused on core logic building, functions, and control structures.
+          </p>
+          <a href="https://github.com/ashitkumard031-cyber/Python-Practice" target="_blank" class="project-link">
+            View Source Code on GitHub &rarr;
+          </a>
+        </div>
+        <div class="card">
+          <h3>Exploratory Data Analysis (EDA)</h3>
+          <p>
+            Data visualization and statistical exploration workflows using Python, Pandas, Matplotlib, and Seaborn
+            to uncover trends across continuous and categorical automobile datasets.
+          </p>
+          <a href="https://github.com/ashitkumard031-cyber" target="_blank" class="project-link">
+            Explore More Repositories &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education &amp; Training</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>B.Tech in Computer Science</h3>
+          <p>College of Engineering Bhubaneswar<br />2024 – Present</p>
+        </div>
+        <div class="card">
+          <h3>AI/ML &amp; Python Training</h3>
+          <p>Central Tool Room &amp; Training Centre (CTTC)<br />6-Month Specialized Certification</p>
+        </div>
+        <div class="card">
+          <h3>Diploma in Electronics &amp; Telecom</h3>
+          <p>College of Engineering Bhubaneswar<br />Graduated 2023 • Aggregate: 75%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <div class="card">
+        <p style="margin-bottom: 1rem;">
+          Looking for a motivated intern or junior developer in Python, Data Analytics, or AI/ML? Feel free to reach out!
+        </p>
+        <p><strong>Location:</strong> Bhubaneswar, Odisha, India</p>
+        <p><strong>Email:</strong> <a href="mailto:ashitkumard031@gmail.com" style="color: var(--accent);">ashitkumard031@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashit-kumar-das-6690b4265" target="_blank" style="color: var(--accent);">linkedin.com/in/ashit-kumar-das-6690b4265</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Ashit Kumar Das. Built &amp; hosted on GitHub Pages.
+  </footer>
+
+</body>
+</html>
